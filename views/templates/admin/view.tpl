@@ -31,6 +31,7 @@
 		<a type="button" class="ajaxcall-recurcive button" href="{$full_price_indexer_url}">{l s='Rebuild entire price index' mod='blocklayered'}</a>
 		<a type="button" class="ajaxcall button" id="attribute-indexer" rel="attribute" href="{$attribute_indexer_url}">{l s='Build attribute index' mod='blocklayered'}</a>
 		<a type="button" class="ajaxcall button" id="url-indexer" rel="price" href="{$url_indexer_url}">{l s='Build URL index' mod='blocklayered'}</a>
+		<a type="button" class="ajaxcall button" id="cache-indexer" rel="cache" href="{$rebuild_category_cache_url}">{l s='Rebuild category cache' mod='blocklayered'}</a>
 	</div>
 	<div class="clearfix">&nbsp;</div>
 	<div class="row">
@@ -47,7 +48,12 @@
 			<br />
 			{l s='You can set a cron job that will rebuild URL index using the following URL:' mod='blocklayered'}
 			<br />
-			<strong>{$url_indexer_url}</strong>			
+			<strong>{$url_indexer_url}</strong>
+			<br/>
+			<br />
+			{l s='You can set a cron job that will rebuild layered category cache using the following URL:' mod='blocklayered'}
+			<br />
+			<strong>{$rebuild_category_cache_url}</strong>
 		</div>
 	</div>
 	<div class="row">

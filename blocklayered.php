@@ -1641,6 +1641,7 @@ class BlockLayered extends Module
 				'id_lang' => Context::getContext()->cookie->id_lang,
 				'token' => substr(Tools::encrypt('blocklayered/index'), 0, 10),
 				'base_folder' => urlencode(_PS_ADMIN_DIR_),
+				'rebuild_category_cache_url' => $module_url.'blocklayered-rebuild-layered-cache.php'.'?token='.substr(Tools::encrypt('blocklayered/index'), 0, 10),
 				'price_indexer_url' => $module_url.'blocklayered-price-indexer.php'.'?token='.substr(Tools::encrypt('blocklayered/index'), 0, 10),
 				'full_price_indexer_url' => $module_url.'blocklayered-price-indexer.php'.'?token='.substr(Tools::encrypt('blocklayered/index'), 0, 10).'&full=1',
 				'attribute_indexer_url' => $module_url.'blocklayered-attribute-indexer.php'.'?token='.substr(Tools::encrypt('blocklayered/index'), 0, 10),

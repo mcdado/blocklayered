@@ -1712,7 +1712,7 @@ class BlockLayered extends Module
 						$url_attribute = str_replace('-', $this->getAnchor(), $url_attribute);
 					$url_parameters = explode($this->getAnchor(), $url_attribute);
 					$attribute_name  = array_shift($url_parameters);
-					if ($attribute_name == 'page')
+					if ($attribute_name == 'page' && isset($url_parameters[0]))
 						$this->page = (int)$url_parameters[0];
 					else if (in_array($attribute_name, array('price', 'weight')))
 						$selected_filters[$attribute_name] = array($this->filterVar($url_parameters[0]), $this->filterVar($url_parameters[1]));
